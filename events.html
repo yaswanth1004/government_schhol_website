@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Government School</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #upcoming-events li,
+    #past-events li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #upcoming-events li figure,
+    #past-events li figure {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    #upcoming-events li h3,
+    #past-events li h3,
+    #upcoming-events li p,
+    #past-events li p {
+      flex: 2;
+    }
+    #upcoming-events li img,
+    #past-events li img {
+      max-width: 500px; 
+      height: 250px;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      #upcoming-events li,
+      #past-events li {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #upcoming-events li figure,
+      #past-events li figure {
+        margin: 20px auto 0;
+      }
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Upcoming Events</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact_us.php">Contact</a></li>
+      <li><a href="student_registration.php">Student Registration</a></li> 
+    </ul>
+  </nav>
+  <main>
+    <section id="upcoming-events" style="background-image: url('events-bg.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 100px 0; color: #fff; text-align: center;"></section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>
+          <h3>Annual Sports Meet</h3>
+          <p>Date: August 15, 2023</p>
+          <p>Time: 9:00 AM - 4:00 PM</p>
+          <p>Location: Sports Ground</p>
+          <figure>
+            <img src="sport.png" alt="Annual Sports Meet">
+          </figure>
+        </li>
+        <li>
+          <h3>Science Fair</h3>
+          <p>Date: September 10, 2023</p>
+          <p>Time: 10:00 AM - 2:00 PM</p>
+          <p>Location: Science Lab</p>
+          <figure>
+            <img src="science.png" alt="Science Fair">
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <section id="past-events"></section>
+      <h2>Past Events</h2>
+      <ul>
+        <li>
+          <h3>Independence Day Celebration</h3>
+          <p>Date: August 15, 2022</p>
+          <p>Location: School Auditorium</p>
+          <p>Details: Students performed patriotic songs and dances to celebrate India's Independence Day.</p>
+          <figure>
+            <img src="independence.png" alt="Independence Day Celebration">
+          </figure>
+        </li>
+        <li>
+          <h3>Environment Day Awareness Drive</h3>
+          <p>Date: June 5, 2023</p>
+          <p>Location: School Campus</p>
+          <p>Details: Students conducted an awareness campaign about environmental conservation.</p>
+          <figure>
+            <img src="environmental.png" alt="Environment Day Awareness Drive">
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Government School.(21BCE9913 B.YASWANTH) All rights reserved.</p>
+  </footer>
+</body>
+</html>
